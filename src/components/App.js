@@ -1,3 +1,6 @@
+import React from "react";
+import Video from "./Video"
+import Header from "./Header"
 import video from "../data/video.js";
 
 function App() {
@@ -5,6 +8,7 @@ function App() {
 
   return (
     <div className="App">
+      <Video video={video}/>
       <iframe
         width="919"
         height="525"
@@ -13,6 +17,7 @@ function App() {
         allowFullScreen
         title="Thinking in React"
       />
+      <Header video={video} />
     </div>
   );
 }
